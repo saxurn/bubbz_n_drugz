@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <script src='vendor/three.js/build/three.min.js'></script>
 <script src="vendor/three.js/examples/js/shaders/FresnelShader.js"></script>
-<script src='../threex.bubble.js'></script>
+<script src='./threex.bubble.js'></script>
 <body style='margin: 0px; background-color: #bbbbbb; overflow: hidden;'><script>
 	var renderer	= new THREE.WebGLRenderer();
 	renderer.setSize( window.innerWidth, window.innerHeight );
@@ -32,7 +32,7 @@
 			
 	for(var i = 0; i < 1000; i++){
 		;(function(){
-			var mesh	= new THREE.BubbleMesh(textureCube)
+			var mesh	= new THREEx.BubbleMesh(textureCube)
 			scene.add(mesh)
 			// position the mesh
 			mesh.position.x = (Math.random()-0.5)*10
